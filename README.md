@@ -32,6 +32,8 @@
 
 ## 项目简介
 
+本仓库的生产版本为 v3.3.0，域名是 `mail.newstardev.me`。默认 `mail-worker/wrangler.jsonc` 已固定现有 D1、KV、静态资源及每小时任务，Cloudflare Workers Builds 使用同一份配置。JWT 密钥保存在 Worker 密钥中，其他现有运行变量通过 `keep_vars` 保留。手动发布请在 `mail-worker` 运行 `pnpm exec wrangler deploy`；GitHub Actions 的手动发布需要仓库配置 `CLOUDFLARE_API_TOKEN`。
+
 只需要一个域名，就可以创建多个不同的邮箱，类似各大邮箱平台，本项目支持署到 Cloudflare Workers ，降低服务器成本，搭建自己的邮箱服务
 
 ## 项目展示
