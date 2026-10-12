@@ -37,5 +37,5 @@
       "invocation_logs": true
     }
   },
-  "build": { "command": "pnpm --prefix ../mail-vue run build" }
+  "build": { "command": "pnpm --prefix ../mail-vue install --frozen-lockfile && pnpm --prefix ../mail-vue run build" }
 }
